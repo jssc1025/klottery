@@ -1,0 +1,69 @@
+---
+title: "Lottery Win Probability Calculator"
+output:
+  html_document:
+    theme: cerulean
+    highlight: tango
+---
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333333;
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+</style>
+
+# Introduction
+
+This project is a Lottery Win Probability Calculator implemented in R using the Shiny framework. The application provides users with insights into the winning probabilities and expected winnings of different lottery numbers for the Korean Lottery (Dong Hang Lottery). It utilizes historical data to calculate probabilities and ranks of each number and offers suggestions based on the analysis.
+
+## Methodology
+
+The Lottery Win Probability Calculator is based on the following methodology:
+
+1. **Data Loading**: Historical lottery data is loaded into the application. The data includes information about the winning numbers and corresponding winnings.
+
+2. **Calculating Occurrences**: The total occurrences of each number in the historical data are calculated. This information helps determine the probability of each number being drawn in future lottery draws.
+
+3. **Probability Calculation**: The probability of each number is calculated by dividing its occurrences by the total occurrences of all numbers. The probabilities are represented as percentages.
+
+4. **Ranking Numbers**: The numbers are ranked based on their probabilities. The rank represents the relative likelihood of each number being drawn. Lower ranks indicate higher probabilities of winning.
+
+5. **Expected Winnings**: The average winnings for the 1st and 2nd place are calculated using the historical data. The expected winnings for each number are estimated based on the win probabilities and average winnings.
+
+6. **Suggested Numbers**: The Lottery Win Probability Calculator suggests a set of numbers based on the historical data. These numbers are selected from the top-ranked numbers with the highest probabilities.
+
+# Features
+
+The Lottery Win Probability Calculator offers the following features:
+
+- **Selected Numbers**: Users can input their chosen numbers and calculate the win probability for those specific numbers. The application displays the probability, rank, and expected winnings for each selected number.
+
+- **All Numbers**: Users can explore the probabilities, ranks, and expected winnings for all lottery numbers. The application provides a table with detailed information and allows for sorting and filtering based on different columns.
+
+- **Visualizations**: The application includes bar charts to visualize the probabilities and ranks of all numbers. These visualizations help users understand the distribution and relative likelihood of each number.
+
+# Future Work
+
+The Lottery Win Probability Calculator can be further improved with additional features, such as:
+
+- **Advanced Analysis**: Incorporating more advanced statistical techniques to identify patterns and trends in the lottery data.
+
+- **Number Generator**: Implementing a number generator that suggests a set of numbers based on user-defined criteria (e.g., higher probability, lower rank).
+
+- **Simulation**: Including a simulation feature to simulate multiple lottery draws and analyze the overall winning probabilities and expected winnings.
+
+# Disclaimer
+
+This application is for informational purposes only and does not guarantee any specific outcomes in lottery draws. The calculated probabilities and expected winnings are based on historical data and do not guarantee future results. Users are advised to make responsible decisions and not rely solely on the information provided by this application.
+
+# Contact Information
+
+For any questions or feedback, please contact:
+- Name: Joseph Chae
+- Email: jssc1025@gmail.com
+- GitHub: https://github.com/jssc1025
